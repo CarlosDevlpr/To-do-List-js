@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceland&amp;display=swap');
+
+
+$grey-add: #eee;
+$grey-list: #ccc;
+$grey-hover-list: #ddd;
+
+html {
+  font-family: "Iceland";
+  background: #191919;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 25px;
+  padding: 25px;
+  border: 1px solid black;
+  border-radius: 12px;
+  background-color: $grey-hover-list;
+}
+
+#todoLogo {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 400px;
+  align-content: center;
+}
+
+#myInput {
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 80%;
+  height: 28px;
+  &:hover {
+    background: #edffee;
+  }
+}
+
+.addBtn {
+  font-size: 22px;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin-left: 25px;
+  padding: 5px 03%;
+  background-color: #000;
+  color: white;
+  &:hover {
+    cursor: pointer;
+    background-color: #ccc;
+    color: #000;
+  }
+}
+
+#myUL {
+  grid-template: list;
+  padding: 10px 16px;
+  background: $grey-list;
+  list-style: none;
+}
+
+#myUL li {
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 6px;
+  height: 40px;
+  padding: 10px 15px 20px;
+  font-size: 30px;
+}
+
+.close {
+  padding: 10px 10px;
+  text-align: center;
+  width: 40px;
+  display: block;
+  border-radius: 12px;
+  font-size: 32px;
+  float: right;
+  &:hover {
+    background-color: #f44336;
+    color: white;
+    cursor: pointer;
+  }
+}
