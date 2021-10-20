@@ -56,7 +56,6 @@ html {
 }
 
 #myUL {
-  grid-template: list;
   padding: 10px 16px;
   background: #ccc;
   list-style: none;
